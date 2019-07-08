@@ -1,0 +1,200 @@
+2018-08-21 10:15:26,278 log ERROR Internal Server Error: /api/projects/5/execute-module-api/
+Traceback (most recent call last):
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/phucdh/django/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/phucdh/django/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/mnt/data/Project/python/ansibleapi/api/views.py", line 82, in post
+    projects = self.get_object(pk)
+  File "/mnt/data/Project/python/ansibleapi/api/views.py", line 79, in get_object
+    raise e
+  File "/mnt/data/Project/python/ansibleapi/api/views.py", line 75, in get_object
+    logging.debug("Projects.object.get: %s", models.Projects.objects.get(pk=pk))
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+api.models.Projects.DoesNotExist: Projects matching query does not exist.
+2018-08-21 10:18:56,717 views DEBUG Projects matching query does not exist.
+2018-08-21 10:37:17,502 log ERROR Internal Server Error: /api/projects/5/execute-module-api/
+Traceback (most recent call last):
+  File "/mnt/data/Project/python/ansibleapi/api/views.py", line 75, in get_object
+    logging.debug("Projects.object.get: %s", models.Projects.objects.get(pk=pk))
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+api.models.Projects.DoesNotExist: Projects matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/phucdh/django/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/phucdh/django/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/mnt/data/Project/python/ansibleapi/api/views.py", line 81, in post
+    projects = self.get_object(pk)
+  File "/mnt/data/Project/python/ansibleapi/api/views.py", line 78, in get_object
+    raise DoesNotExist(e)
+api.exceptions.DoesNotExist: Projects matching query does not exist.
+2018-08-21 10:53:08,718 log ERROR Internal Server Error: /api/projects/5/execute-module-api/
+Traceback (most recent call last):
+  File "/mnt/data/Project/python/ansibleapi/api/views.py", line 75, in get_object
+    logging.debug("Projects.object.get: %s", models.Projects.objects.get(pk=pk))
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+api.models.Projects.DoesNotExist: Projects matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/phucdh/django/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/phucdh/django/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/mnt/data/Project/python/ansibleapi/api/views.py", line 81, in post
+    projects = self.get_object(pk)
+  File "/mnt/data/Project/python/ansibleapi/api/views.py", line 78, in get_object
+    raise DoesNotExist(e.message)
+AttributeError: 'DoesNotExist' object has no attribute 'message'
+2018-08-21 10:54:03,550 log ERROR Internal Server Error: /api/projects/5/execute-module-api/
+Traceback (most recent call last):
+  File "/mnt/data/Project/python/ansibleapi/api/views.py", line 75, in get_object
+    logging.debug("Projects.object.get: %s", models.Projects.objects.get(pk=pk))
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+api.models.Projects.DoesNotExist: Projects matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/phucdh/django/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/phucdh/django/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/mnt/data/Project/python/ansibleapi/api/views.py", line 82, in post
+    projects = self.get_object(pk)
+  File "/mnt/data/Project/python/ansibleapi/api/views.py", line 79, in get_object
+    print(e.message)
+AttributeError: 'DoesNotExist' object has no attribute 'message'
+2018-08-21 10:54:17,320 log ERROR Internal Server Error: /api/projects/5/execute-module-api/
+Traceback (most recent call last):
+  File "/mnt/data/Project/python/ansibleapi/api/views.py", line 75, in get_object
+    logging.debug("Projects.object.get: %s", models.Projects.objects.get(pk=pk))
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+api.models.Projects.DoesNotExist: Projects matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/phucdh/django/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/phucdh/django/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/mnt/data/Project/python/ansibleapi/api/views.py", line 82, in post
+    projects = self.get_object(pk)
+  File "/mnt/data/Project/python/ansibleapi/api/views.py", line 79, in get_object
+    print(e.message)
+AttributeError: 'DoesNotExist' object has no attribute 'message'
+2018-08-21 10:54:52,906 log ERROR Internal Server Error: /api/projects/5/execute-module-api/
+Traceback (most recent call last):
+  File "/mnt/data/Project/python/ansibleapi/api/serializers.py", line 53, in execute_module_api
+    project = Projects.objects.get(pk=pk)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+api.models.Projects.DoesNotExist: Projects matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/phucdh/django/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/phucdh/django/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/phucdh/django/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/mnt/data/Project/python/ansibleapi/api/views.py", line 87, in post
+    rdata = serializer.execute_module_api(request, pk)
+  File "/mnt/data/Project/python/ansibleapi/api/serializers.py", line 55, in execute_module_api
+    logger.debug(e.message)
+NameError: name 'logger' is not defined
